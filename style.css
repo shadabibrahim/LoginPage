@@ -1,0 +1,55 @@
+* {
+  background-color: black;
+  color: white;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+}
+h1 {
+  font-size: 50px;
+}
+.btn {
+  border: none;
+}
+.signBtn {
+  color: black;
+  background-color: white;
+}
+main,
+section {
+  margin: 10% 25%;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: none;
+  width: 100%;
+  color: white;
+  height: 33px;
+  border-bottom: 2px solid white;
+  margin: 6px 0px;
+  font-size: 25px;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: white;
+}
+
+.label {
+  font-size: 17px;
+  color: white;
+  margin: 0px 14px;
+}

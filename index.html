@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mohd Shadab F3 Contest 29 April 2023">
+    <title>Signup</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="left">Header</div>
+        <div class="right">
+            <input type="button" value="Signup" class="btn" onclick="singup()">
+            <input type="button" value="Profile" class="btn" onclick="profile()">
+        </div>
+    </header>
+    <hr>
+    <!-- SignUp Section -->
+    <main>
+        <h1>Signup</h1>
+        <form action="#">
+            <input type="text" id="Name" placeholder="Full Name" required><br>
+
+            <input type="email" id="email" placeholder="Email" required><br>
+
+            <input type="password" id="password" placeholder="Password" required><br>
+
+            <input type="password" id="confirmPass" placeholder="Confirm Password" required><br>
+
+        </form>
+        <p id="status"></p>
+
+        <input type="button" value="Signup" id="signup" class="signBtn" onclick="save()">
+
+    </main>
+    <!-- profile Section -->
+    <section style="display: none">
+        <h1>Profile</h1>
+        <form action="#">
+            <label>Full Name:</label><input type="text" id="pName"><br><br>
+            <label>Email:</label><input type="email" id="pEmail"><br><br>
+            <label>Password:</label><input type="password" id="pPassword"><br><br>
+
+
+        </form>
+        <p id="status"></p>
+
+        <input type="button" value="Signout" id="signup" class="signBtn" onclick="Signout()">
+
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>
